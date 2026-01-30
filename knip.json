@@ -1,0 +1,7 @@
+{
+  "workspaces": {
+    "apps/*": {},
+    "packages/*": {}
+  },
+  "ignoreDependencies": ["@workspace/eslint-config"]
+}

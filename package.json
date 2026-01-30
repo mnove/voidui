@@ -1,0 +1,29 @@
+{
+  "name": "voidui-monorepo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "prepare": "lefthook install",
+    "lint": "turbo lint",
+    "knip": "knip",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.3.1",
+    "@commitlint/config-conventional": "^20.3.1",
+    "@workspace/eslint-config": "workspace:*",
+    "@workspace/typescript-config": "workspace:*",
+    "knip": "^5.82.1",
+    "lefthook": "^2.0.13",
+    "prettier": "^3.7.4",
+    "turbo": "^2.6.3",
+    "typescript": "5.7.3"
+  },
+  "packageManager": "pnpm@10.4.1",
+  "engines": {
+    "node": ">=20"
+  }
+}
